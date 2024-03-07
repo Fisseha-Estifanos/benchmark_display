@@ -1,0 +1,18 @@
+[
+    {
+        "Name": "Model details",
+        "Metrics": ["Name", "llm", "Optimized", "Embedding model", "Retrieval model", "Knowledge base", "Chunk size", "Chunk overlap"],
+        "Values": [
+            ["Assistant", "G3.5 Turbo", "NA", "Ada-02", "NA", "m-ric/huggingface_doc", "NA", "NA"],
+            ["Assistant", "Gpt 41106 preview", "NA", "Ada-02", "NA", "m-ric/huggingface_doc", "NA", "NA"],
+            
+            ["RizzBuzz", "Gpt 4", "No", "Ada-02", "FAISS", "m-ric/huggingface_doc", "1000", "150"],
+            ["RizzBuzz", "Gpt 4", "Yes", "Ada-02", "FAISS", "m-ric/huggingface_doc", "1000", "150"],
+            
+            ["DSpy", "G3.5 Turbo", "NO", "NA", "colBert", "m-ric/huggingface_doc", "NA", "NA"],
+            ["DSpy MUlti-Hop", "41106 preview", "YES", "NA", "colBert", "m-ric/huggingface_doc", "NA", "NA"],
+            ["DSpy", "41106 preview", "YES", "NA", "colBert", "m-ric/huggingface_doc", "NA", "NA"],
+            ["DSpy", "coHere", "NO", "NA", "colBert", "m-ric/huggingface_doc", "NA", "NA"]
+        ]
+    }
+]
