@@ -62,7 +62,7 @@ def plot_model_details(json_file):
 # Streamlit App
 def main():
     st.subheader('Rag Model Details')
-    model_details_config = "model_details.json"             # model details
+    model_details_config = "model_details_config.json"             # model details
     plot_model_details(model_details_config)                # plotting model results
 
     st.subheader('Rag Model Benchmark visualizations')
