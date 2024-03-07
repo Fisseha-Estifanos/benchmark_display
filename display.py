@@ -61,11 +61,13 @@ def plot_model_details(json_file):
 
 # Streamlit App
 def main():
+    st.title('Data Visualization Dashboard')
+
     st.subheader('Rag Model Details')
     model_details_config = "model_details_config.json"             # model details
     plot_model_details(model_details_config)                # plotting model results
 
-    st.subheader('Rag Model Benchmark visualizations')
+    st.subheader('Rag Model Benchmark Visualizations')
     benchmarking_config = "benchmarking_config.json"        # benchmarking results
     plot_from_json(benchmarking_config)                     # plotting benchmark results
 
