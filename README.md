@@ -12,10 +12,20 @@ pip3 install --r requirements.txt
 
 
 Step 3 : load in the datasets
+The datasets in the datasets folder need to be in the following format
+For Ragas
+["question", "ground_truth", "answer", "contexts"]
+
+
+For DataBricks
+["question", "answer", "context"]pyth 
+
+
+Step 4 : Benchmark the datasets
 
 
 
-Step 4 : Display
+Step 4 : Display the benchmarking results
 Display notebook
 run the notebook
 
