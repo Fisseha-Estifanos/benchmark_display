@@ -5,7 +5,6 @@ import numpy as np
 import json
 
 def plot_from_json(json_file):
-    # Load JSON data
     with open(json_file, 'r') as file:
         data = json.load(file)
 
@@ -50,13 +49,25 @@ def create_grouped_bar_chart_colored(data, chart_title='', column_names=None, co
 
     return fig, df
 
+
+def plot_model_details(json_file):
+    with open(json_file, 'r') as file:
+        data = json.load(file)
+
+    for item in data:
+        if "Metrics" in item and "Values" in item:
+            df = pd.DataFrame(item["Values"], columns=item["Metrics"])
+            st.table(df)
+
 # Streamlit App
 def main():
-    json_file = "config.json"  # Replace with your JSON file path
-    plot_from_json(json_file)
+    st.subheader('Rag Model Details')
+    model_details_config = "model_details.json"             # model details
+    plot_model_details(model_details_config)                # plotting model results
+
+    st.subheader('Rag Model Benchmark visualizations')
+    benchmarking_config = "benchmarking_config.json"        # benchmarking results
+    plot_from_json(benchmarking_config)                     # plotting benchmark results
 
 if __name__ == "__main__":
     main()
-
-
-# TODO : add model details
