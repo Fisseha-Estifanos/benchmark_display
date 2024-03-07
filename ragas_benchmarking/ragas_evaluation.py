@@ -26,6 +26,7 @@ def create_dataset_dict_from_csv(csv_file):
 # for k in splits:
 # load the data
 # csv_file_path = "m-ric_huggingface_doc/our_rag_with_different_splits/latest_dataset_with_retriever_and_llm_cs_"+str(k)+".csv"
+# TODO : change your file name here
 csv_file_path = "../datasets/data_set_name.csv"
 
 print(f'\n\ncsv_file_path: {csv_file_path}\n\n')
@@ -35,6 +36,8 @@ print(f'type of dataset_dict: {type(dataset_dict)}')
 
 
 
+# TODO : If your dataset doesn't contain the ground truth, uncomment the code section below
+# TODO : change the dataset_name to the dataset that contains the ground truth 
 # # load the initial dataset with ground truth
 # dataset_name = "m-ric/huggingface_doc_qa_eval"
 # print(f"\n\n>- Loading RAG dataset '{dataset_name}' ...")
@@ -43,7 +46,7 @@ print(f'type of dataset_dict: {type(dataset_dict)}')
 # print(f'type of dataset:: {type(dataset)}')
 
 
-
+# TODO : uncomment the code section below to add the ground truth to your dataset
 # # add the ground truth
 # eval_dataset_with_new_column = dataset_dict['eval'].add_column('ground_truth', dataset['train']['answer'])
 # dataset_dict['eval'] = eval_dataset_with_new_column
