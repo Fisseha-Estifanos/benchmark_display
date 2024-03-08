@@ -40,13 +40,17 @@ pip install -r requirements.txt
 
 To run benchmarks using Ragas or Databricks tools, follow these steps:
 
-* 1. Place the desired dataset in the respective folders (databricks_benchmarking/databricks_evaluation_datasets/ or ragas_benchmarking/ragas_evaluation_datasets/).
-* 2. Modify testing_config.json:
-    * 2.1 For Ragas: Change the value of the dataset_name under the first item.
-    * 2.1. For Databricks: Change the value of the dataset_name under the second item.
-* 3. Execute the benchmarking script:
-    * 3.1 For Ragas:
-    python ragas_evaluation.py
-    * 3.2 For Databricks:
-    python databricks_evaluation.py
-* 4. Update benchmarking_config.json with the results from step 3 for display with the results from databricks or ragas.
+1. Place the desired dataset in the respective folders (databricks_benchmarking/databricks_evaluation_datasets/ or ragas_benchmarking/ragas_evaluation_datasets/).
+2. Modify testing_config.json:
+   - 2.1 For Ragas: Change the value of the dataset_name under the first item.
+   - 2.1. For Databricks: Change the value of the dataset_name under the second item.
+3. Execute the benchmarking script:
+    - 3.1 For Ragas:
+```bash
+python ragas_evaluation.py   
+```
+   - 3.2 For Databricks:
+```bash
+     python databricks_evaluation.py
+```
+4. Update benchmarking_config.json with the results from step 3 for display with the results from databricks or ragas.
