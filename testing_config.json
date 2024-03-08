@@ -1,12 +1,15 @@
 [
     {
         "Name": "ragas testing",
-        "data_set_name": "databricks_evaluation_datasets/paste_your_data_set_here.csv",
+        "data_set_name": "ragas_benchmarking_datasets/paste_your_data_set_here.csv",
         "ground_truth_containing_data_set_name": "m-ric/huggingface_doc_qa_eval",
         "data_set_split_name": "eval"
     },
     {
         "Name": "databricks testing",
-        "data_set_name" : "ragas_evaluation_datasets/paste_your_data_set_here"
+        "data_set_name": "databricks_evaluation_datasets/paste_your_data_set_here.csv",
+        "data_bricks_evaluation_llm": "gpt-4",
+        "temperature": 0.1,
+        "input_columns": ["question", "answer", "context"]
     }
 ]
