@@ -18,7 +18,7 @@ with open(config_file, 'r') as file:
         testing_config_data = json.load(file)
 
 
-# TODO : uncomment for open AI key
+# # TODO : uncomment for open AI key
 # OPENAI_API_KEY = os.environ['OPEN_API_KEY']
 # os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
