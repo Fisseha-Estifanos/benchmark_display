@@ -3,16 +3,11 @@
         "Name": "Model details",
         "Metrics": ["Name", "llm", "Optimized", "Embedding model", "Retrieval model", "Knowledge base", "Chunk size", "Chunk overlap"],
         "Values": [
-            ["Assistant", "G3.5 Turbo", "NA", "Ada-02", "NA", "m-ric/huggingface_doc", "NA", "NA"],
-            ["Assistant", "Gpt 41106 preview", "NA", "Ada-02", "NA", "m-ric/huggingface_doc", "NA", "NA"],
-            
-            ["RizzBuzz", "Gpt 4", "No", "Ada-02", "FAISS", "m-ric/huggingface_doc", "1000", "150"],
-            ["RizzBuzz", "Gpt 4", "Yes", "Ada-02", "FAISS", "m-ric/huggingface_doc", "1000", "150"],
-            
-            ["DSpy", "G3.5 Turbo", "NO", "NA", "colBert", "m-ric/huggingface_doc", "NA", "NA"],
-            ["DSpy MUlti-Hop", "41106 preview", "YES", "NA", "colBert", "m-ric/huggingface_doc", "NA", "NA"],
-            ["DSpy", "41106 preview", "YES", "NA", "colBert", "m-ric/huggingface_doc", "NA", "NA"],
-            ["DSpy", "coHere", "NO", "NA", "colBert", "m-ric/huggingface_doc", "NA", "NA"]
+            ["RizzBuzz OpenAI", "Gpt 4-turbo", "No", "Ada-02", "FAISS", "about us document, billion dollar sleep pdf, Peter-Attia-outlive pdf, SENSE score algorithm pdf", "2000", "350"],
+            ["RizzBuzz Claude3", "claude-3-opus-20240229", "No", "Ada-02", "FAISS", "about us document, billion dollar sleep pdf, Peter-Attia-outlive pdf, SENSE score algorithm pdf", "2000", "350"],
+
+            ["RizzBuzz OpenAI improved", "Gpt 4-turbo", "Yes", "Ada-02", "FAISS", "about us document, billion dollar sleep pdf, Peter-Attia-outlive pdf, updated SENSE score algorithm pdf, Medo Gpt nutrition and exercise data", "200", "35"],
+            ["RizzBuzz Claude3 improved", "claude-3-opus-20240229", "Yes", "Ada-02", "FAISS", "about us document, billion dollar sleep pdf, Peter-Attia-outlive pdf, updated SENSE score algorithm pdf, Medo Gpt nutrition and exercise data", "200", "35"]
         ]
     }
 ]
